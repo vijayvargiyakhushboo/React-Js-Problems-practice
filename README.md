@@ -1,4 +1,4 @@
-# React JS assignment Preparation
+# React JS assignment Preparation for Interview
 
 This project is having multiple component where each component is doing one task (Coding preparation in each component).
 
