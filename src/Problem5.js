@@ -1,16 +1,19 @@
 //This problem is to add data into array and show using list and the item should get added from text field.
-import { useState } from "react";
+import { useState ,useRef} from "react";
+import Child from "./Child";
 
 const Problem5 = () => {
     
     const [val, setItem] = useState('');
     const [data, setData] = useState([]);
+    const inputRef = useRef(null)
     const getItem = () => {
       setData([...data, val])
     }
+    const setFocus =()=> {
+        inputRef.current.focus()
+        console.log(inputRef.current.value)
 
-    const getData = () => {
-        setData([...data, val])
     }
 
  return (
@@ -25,6 +28,9 @@ const Problem5 = () => {
             })
             }
         </ul>
+        <h5>Below is the forwardRef Example:</h5>
+        <Child ref={inputRef} />
+        <button onClick={setFocus}>setFocus</button>
  </div>
  )
 
