@@ -5,7 +5,8 @@ import './App.css';
 // import Counter from './HOC/Counter';
 // import Problem3 from './Problem3';
 // import Problem4 from './Problem4';
-import Problem5 from './Problem5';
+//import Problem5 from './Problem5';
+import Problem6 from './Problem6';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     designation: 'SSE',
     id:1
   },
-  {name:'Rahul',
+  {name:'KV',
     designation: 'TL',
     id:3
   }]
@@ -24,7 +25,7 @@ function App() {
     
       {/* <Problem3 listItem={listItem} /> */}
       {/* <Problem4 /> */}
-      <Problem5 />
+      <Problem6 />
     </div>
   );
 }
